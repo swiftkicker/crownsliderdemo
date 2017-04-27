@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Crown_Slider_Demo_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" alignment="left" text="0" textAlignment="center" id="SEO-k5-yce">
+                            <fontDescription key="font" type="system" pointSize="60"/>
+                        </label>
+                        <slider width="1" alignment="left" maximum="10" steps="10" id="Pvj-zB-P6p">
+                            <connections>
+                                <action selector="valueSliderChanged:" destination="AgC-eL-Hgc" id="Ydk-Ew-XNm"/>
+                            </connections>
+                        </slider>
+                    </items>
+                    <connections>
+                        <outlet property="valueLabel" destination="SEO-k5-yce" id="df7-wh-C9C"/>
+                        <outlet property="valueSlider" destination="Pvj-zB-P6p" id="usK-GS-Xus"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="206" y="-177"/>
+        </scene>
+    </scenes>
+</document>
